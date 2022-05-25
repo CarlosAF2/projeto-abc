@@ -1,0 +1,64 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: lightyellow;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+h1{
+    background-color: black;
+    color: white;
+    margin: 0; 
+    padding-left: 10px;
+}
+#imagem-decorativa{
+    background-image: url(../ImagemProjeto/teclado.jpg);
+    height: 450px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+footer{
+    height: 150px;
+    background: rgb(9,9,121);
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+    display: flex;/* trabalha por eixo e direções */
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    clear:both;  /* Resolver efeito do float no rodapé */
+}
+/* DIV que envolve as seções */
+.treinamentos{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* SEções filhas de treinamento */
+.treinamentos section{
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 32%;
+    box-shadow: black 1px 1px 10px;
+
+}
+.flutuar-esquerda {
+    width: 250px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width:600px) {
+    .treinamentos{flex-direction: column;}
+    .treinamento section {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}

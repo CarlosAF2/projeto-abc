@@ -1,0 +1,59 @@
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color:blue;
+    overflow: hidden;
+}
+/* Deixando os intens da lista "flutuados á esquerda(na pratica,ladeo a lado */
+.menu li{
+    float: left;
+
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px; /*  14 px - para cima e para baixo 16px para esquerda e direita  */
+    display: block;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: blue;
+   
+}
+/* media screen and (max-width:760px) {
+    .menu li{
+        float: none;
+        
+    }
+    .menu a{ text-align: center;}
+       
+} */
+
+/*  Esconder a opção do item Menu */
+.menu li.icone {display: none;}
+
+@media screen and (max-width: 760px) {
+    /* Escondemos os itens do menu */
+    .menu li {display: none;}
+    /* Exibimos novamente o item Menu */
+    .menu li.icone{
+        display: block;
+        float: right;
+    } 
+    /* Regra fechada(somente quando o .menu estuver com o 
+    .aberto ou seja somente com as duas classes juntas.) */
+    .menu.aberto li{
+        float: none;
+        display: inline;
+    }   
+    .menu.aberto{
+        position:relative;
+    }
+    .menu.aberto{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

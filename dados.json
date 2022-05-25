@@ -1,0 +1,55 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java Pleno"
+    },
+    {
+      "id": 2,
+      "titulo": "Analista Comercial"
+    },
+    {
+      "id": 3,
+      "titulo": "Instrutor Excel Avançado"
+    },
+    {
+      "id": 4,
+      "titulo": "Gerente de Projetos para .NET"
+    },
+    {
+      "id": 5,
+      "titulo": "Consultor de Desenvolvimento Agil"
+    },
+    {
+      "id": 6,
+      "titulo": "Programador VB.Net"
+    },
+    {
+      "id": 7,
+      "titulo": "Desenvolvedor Front-End"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Carlos Alberto Sivla Filho",
+      "data": "1665-04-04",
+      "telefone": "11947472215",
+      "vaga": "Consultor de Desenvolvimento Agil",
+      "id": 1
+    },
+    {
+      "nome": "gustavo ",
+      "data": "",
+      "telefone": "",
+      "vaga": "",
+      "id": 2
+    },
+    {
+      "nome": "gustavo",
+      "data": "1335-11-04",
+      "telefone": "11947472215",
+      "vaga": "Analista Comercial",
+      "id": 3
+    }
+  ]
+}
